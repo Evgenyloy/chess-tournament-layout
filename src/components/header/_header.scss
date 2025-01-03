@@ -1,0 +1,116 @@
+.header {
+  position: relative;
+  background: rgb(233, 222, 212);
+  height: 700px;
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 100;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__content {
+    max-width: 543px;
+  }
+
+  &__title {
+    font-size: clamp(2.25rem, 1.553vw + 1.886rem, 3.75rem); //60-36
+    color: rgb(49, 49, 49);
+    font-family: Merriweather;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: 0px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+
+  &__title-s1 {
+    padding-left: 91px;
+  }
+
+  &__title-s2 {
+    padding-left: 35px;
+  }
+
+  &__text {
+    color: rgb(49, 49, 49);
+    font-family: Golos Text;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__btn-link {
+    width: 263px;
+    padding: clamp(0.438rem, 0.841vw + 0.24rem, 1.25rem);
+    font-family: Golos Text;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 130%;
+    text-align: center;
+    border-radius: 66px;
+    overflow: hidden;
+  }
+
+  &__btn-link--left {
+    color: #ffffff;
+    background: black;
+    transition: 0.2s linear;
+    &:hover {
+      color: rgb(31, 31, 31);
+      background: rgb(251, 206, 81);
+    }
+  }
+
+  &__btn-link--right {
+    color: rgb(31, 31, 31);
+    background: transparent;
+    transition: 0.2s linear;
+    border: 2px solid rgb(31, 31, 31);
+    &:hover {
+      color: #ffffff;
+      background: rgb(31, 31, 31);
+    }
+  }
+}
+
+.logo {
+  display: flex;
+  margin-bottom: clamp(2.5rem, 1.424vw + 2.166rem, 3.875rem);
+  &__img {
+    width: 92px;
+    height: 31px;
+  }
+
+  &__text {
+    font-size: clamp(0.875rem, 0.129vw + 0.845rem, 1rem);
+    font-family: 'Golos Text';
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 8px;
+  }
+}
+
+//Ctrl + Shift + Y
