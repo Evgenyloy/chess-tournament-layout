@@ -7,13 +7,11 @@ import './_header-media.scss';
 function Header() {
   return (
     <header className="header">
-      <img
-        src={deskImage}
-        alt="header__img"
-        className="header__img"
-        srcSet={`${mobileImage} 375w, ${deskImage} 1920w`}
-        sizes="(max-width: 375px) 375px, (max-width: 1920px) 1920px"
-      />
+      <picture>
+        <source media="(max-width: 375px)" srcSet={`${mobileImage}`} />
+        <source media="(max-width: 1920px)" srcSet={`${deskImage}`} />
+        <img src={deskImage} alt="header__img" className="header__img" />
+      </picture>
       <div className="container">
         <div className="header__inner">
           <div className="logo">

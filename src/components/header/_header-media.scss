@@ -38,12 +38,12 @@
     height: 27px;
   }
   .header {
-    height: 812px;
+    height: 772px;
     &__inner {
       padding-top: 19px;
     }
     &__title-s1 {
-      padding-left: 63px;
+      padding-left: 60px;
     }
     &__title-s2 {
       padding-left: 30px;
@@ -60,6 +60,19 @@
     }
     &__btn-wrapper {
       gap: 12px;
+    }
+  }
+}
+@media (max-width: 374px) {
+  .header {
+    &__title-s1 {
+      padding-left: 0px;
+    }
+    &__title-s2 {
+      padding-left: 0px;
+    }
+    &__title {
+      font-size: clamp(1.75rem, 14.545vw - 1.159rem, 2.25rem);
     }
   }
 }
