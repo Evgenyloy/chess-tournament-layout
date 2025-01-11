@@ -7,7 +7,7 @@
   }
   &__title {
     font-family: Merriweather;
-    font-size: 36px;
+    font-size: clamp(1.75rem, 0.807vw + 1.561rem, 2.25rem); //36 28
     font-weight: 700;
     line-height: 135%;
     text-align: left;
@@ -86,26 +86,74 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 1000px) {
   .tournament {
-    padding-top: 10px;
+    &__inner {
+      flex-direction: column;
+      gap: 40px;
+    }
+    &__img-cont {
+      order: 2;
+      align-self: center;
+    }
+    &__wrapper {
+      margin-left: 0;
+      align-self: center;
+    }
+  }
+}
+@media (max-width: 704px) {
+  .tournament__wrapper {
+    width: auto;
+  }
+}
+@media (max-width: 600px) {
+  .tournament {
     &__inner {
       flex-direction: column;
       position: relative;
+      gap: 0;
     }
+    &__rows {
+      flex-direction: column;
+      gap: 13px;
+      padding: 15px 0;
+
+      &:nth-child(4) {
+        flex-direction: row;
+        & .tournament__column-item.tournament__column-item--left {
+          width: 145px;
+        }
+      }
+    }
+    &__group {
+      margin-bottom: 22px;
+      &::after {
+        display: none;
+      }
+    }
+    &__column-item.tournament__column-item--right {
+      padding-left: 0;
+    }
+    &__img-cont {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 375px) {
+  .tournament {
+    padding-top: 10px;
 
     &__img-cont {
-      width: 335px;
+      order: 0;
       height: 450px;
       left: 0;
       top: 0;
     }
-    &__img {
-      //object-fit: cover;
-    }
+
     &__wrapper {
       padding-top: 0;
-      width: 335px;
+      width: 100%;
       margin-left: 0;
     }
 
@@ -123,26 +171,12 @@
         display: none;
       }
     }
-    &__rows {
-      flex-direction: column;
-      gap: 13px;
-      padding: 15px 0;
-      &:not(:last-child) {
-      }
-      &:nth-child(4) {
-        flex-direction: row;
-        & .tournament__column-item.tournament__column-item--left {
-          width: 145px;
-        }
-      }
-    }
-    &__column-item.price-col1 {
-    }
-    &__column-item.tournament__column-item--right {
-      padding-left: 0;
-    }
+
     &__text {
       font-size: 18px;
+    }
+    &__column-item.tournament__column-item--left {
+      width: 100%;
     }
   }
 }

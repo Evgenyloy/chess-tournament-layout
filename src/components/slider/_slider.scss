@@ -1,0 +1,35 @@
+.slider {
+  &__btn {
+    border: none;
+    background-color: white;
+  }
+  &__list {
+    width: 335px;
+    height: 300px;
+    display: flex;
+    overflow: hidden;
+  }
+  &__item {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+    flex-shrink: 0;
+    flex-grow: 0;
+
+    font-size: 20px;
+    font-weight: 500;
+    background: rgb(233, 222, 212);
+    width: 335px;
+    height: 300px;
+  }
+
+  svg {
+    background-color: white;
+    &:hover {
+      background-color: white;
+      stroke: white;
+      fill: red;
+    }
+  }
+}

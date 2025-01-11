@@ -1,5 +1,5 @@
 import tournamentImg from '../../img/tournament-img.png';
-import './lecture.scss';
+import './_lecture.scss';
 
 function Lecture() {
   return (
@@ -7,7 +7,7 @@ function Lecture() {
       <div className="container">
         <div className="lecture__inner">
           <h2 className="lecture__title" id="tournament">
-            Чтобы&nbsp;поддержать <br /> Международный васюкинский
+            Чтобы поддержать <br /> Международный васюкинский
             <br /> турнир
             <span className="lecture__sp-break">
               &nbsp;посетите лекцию на&nbsp;тему: <br />

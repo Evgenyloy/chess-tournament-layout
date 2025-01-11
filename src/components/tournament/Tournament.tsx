@@ -3,7 +3,7 @@ import './_tournament.scss';
 
 function Tournament() {
   return (
-    <div className="tournament">
+    <section className="tournament">
       <div className="container">
         <div className="tournament__inner">
           <div className="tournament__img-cont">
@@ -73,7 +73,7 @@ function Tournament() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

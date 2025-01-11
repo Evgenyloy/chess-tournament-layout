@@ -1,6 +1,9 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  overflow-x: hidden;
+}
 .container {
   padding-inline: 5px;
   max-width: 1232px; //1212px
