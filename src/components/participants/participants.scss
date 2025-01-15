@@ -1,5 +1,6 @@
 .participants {
-  padding: 120px 0 136px;
+  padding: 200px 0 0;
+  height: 927px;
   .swiper {
     height: 600px;
     width: 100%;
@@ -23,7 +24,7 @@
   &__slide {
     position: relative;
     top: -120px;
-    padding-top: 120px;
+    padding-top: 142px;
     overflow: hidden;
   }
   &__slider-btn-wrapper {
@@ -52,12 +53,6 @@
       }
     }
   }
-  &__title-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 35px;
-  }
 
   &__title {
     color: rgb(49, 49, 49);
@@ -67,6 +62,8 @@
     line-height: 120%;
     text-align: left;
     text-transform: uppercase;
+
+    margin-bottom: 35px;
   }
 
   &__item {
@@ -80,7 +77,7 @@
   }
 
   &__img {
-    margin-bottom: 28px;
+    margin-bottom: 30px;
     width: clamp(15.25rem, 7.669vw + 13.453rem, 20rem); //320-244
     height: clamp(15.25rem, 7.669vw + 13.453rem, 20rem); //320-244
   }
@@ -101,7 +98,7 @@
     font-weight: 400;
     line-height: 120%;
     letter-spacing: 0px;
-    margin-bottom: 32px;
+    margin-bottom: 28px;
   }
 
   &__item-link {
@@ -132,24 +129,44 @@
 }
 
 @media (max-width: 1000px) {
+  .participants__title {
+    text-align: center;
+  }
   .participants__slider-btn-wrapper {
+    position: relative;
+    width: 130px;
+    margin: 0 auto;
+    bottom: 61px;
     text-align: center;
     top: unset;
     right: unset;
-    top: 92%;
-    left: 50%;
-    transform: translate(-50%, -92%);
-    margin: 0 auto;
-    width: 130px;
   }
-  .swiper-pagination.swiper-pagination {
+  .participants .swiper-pagination {
+    margin: 0 auto;
+    position: relative;
+    bottom: 31px;
     top: unset;
     right: unset;
-    top: 91%;
-    left: 50%;
-    transform: translate(-50%, -91%);
   }
   .participants .swiper {
     height: 500px;
+  }
+}
+
+@media (max-width: 375px) {
+  .participants {
+    padding-top: 140px;
+    height: 823px;
+  }
+  .participants__title {
+    text-align: left;
+    line-height: 110%;
+    margin-bottom: 20px;
+  }
+  .participants__slider-btn-wrapper {
+    bottom: 92px;
+  }
+  .participants .swiper-pagination {
+    bottom: 64px;
   }
 }

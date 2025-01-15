@@ -1,0 +1,10 @@
+.footer {
+  padding: 40px clamp(1.25rem, 5.247vw + 0.02rem, 4.5rem)
+    clamp(3.75rem, 1.211vw + 3.466rem, 4.5rem);
+  background: rgb(233, 222, 212);
+
+  color: rgb(49, 49, 49);
+  font-family: Golos Text;
+  font-size: 16px;
+  line-height: 120%;
+}

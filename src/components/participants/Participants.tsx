@@ -47,14 +47,13 @@ function Participants() {
     <section className="participants">
       <div className="container">
         <div className="participants__block">
-          <div className="participants__title-inner">
-            <h2 className="participants__title">участники турнира</h2>
-          </div>
+          <h2 className="participants__title">участники турнира</h2>
+
           <div className="participants__slide slide">
             <Swiper
               modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-              //centeredSlides
-              //autoplay
+              centeredSlides
+              autoplay
               spaceBetween={50}
               pagination={{ clickable: true, type: 'fraction' }}
               speed={300}
