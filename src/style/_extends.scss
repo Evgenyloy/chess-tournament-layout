@@ -15,4 +15,16 @@
   align-items: center;
   justify-content: center;
 }
+%pseudo-2 {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 0px;
+  left: -50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 //@extend %flex-center

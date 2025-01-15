@@ -1,5 +1,5 @@
 import tournamentImage from '../../img/tournament-price.png';
-import './_tournament.scss';
+import './tournament.scss';
 
 function Tournament() {
   return (

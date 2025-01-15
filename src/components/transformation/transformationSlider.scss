@@ -1,0 +1,140 @@
+@use '../../style/_extends';
+
+.transformation {
+  .swiper {
+    height: 360px;
+  }
+  .swiper-wrapper {
+    height: 300px;
+  }
+  .swiper-pagination {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    bottom: -40px;
+    width: 130px;
+    margin: 0 auto;
+  }
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+    border: none;
+
+    background: rgb(217, 217, 217);
+    background: black;
+  }
+  .swiper-pagination-bullet-active {
+    background: black;
+  }
+
+  &__slider-text {
+    position: relative;
+  }
+  &__slider-text-2,
+  &__slider-text-5 {
+    margin-top: 52px;
+  }
+  &__slider-item {
+    width: 335px;
+    height: auto;
+    min-width: 100%;
+
+    font-family: Golos Text;
+    font-size: clamp(1.125rem, 0.202vw + 1.078rem, 1.25rem); //20-18
+    font-weight: 500;
+    line-height: 120%;
+    color: rgb(49, 49, 49);
+    background: rgb(233, 222, 212);
+    padding: 60px 10px 10px 75px;
+
+    transition: all 0.2s linear;
+    & .transformation__slider-text-1::after {
+      content: '1';
+      @extend %pseudo-2;
+    }
+    & .transformation__slider-text-2::after {
+      content: '2';
+      @extend %pseudo-2;
+    }
+    & .transformation__slider-text-3::after {
+      content: '3';
+      @extend %pseudo-2;
+    }
+    & .transformation__slider-text-4::after {
+      content: '4';
+      @extend %pseudo-2;
+    }
+    & .transformation__slider-text-5::after {
+      content: '5';
+      @extend %pseudo-2;
+    }
+    & .transformation__slider-text-6::after {
+      content: '6';
+      @extend %pseudo-2;
+    }
+    & .transformation__slider-text-7::after {
+      content: '7';
+      @extend %pseudo-2;
+    }
+  }
+  &__slider-btn-wrapper {
+    position: relative;
+    width: 178px;
+    bottom: -15px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__slider-btn {
+    position: relative;
+    z-index: 20;
+    width: 36px;
+    height: 36px;
+    border: none;
+    background-color: white;
+    transition: all 0.1s linear;
+    &:hover {
+      svg {
+        transition: all 0.1s linear;
+        fill: rgb(251, 206, 81);
+      }
+    }
+  }
+
+  .slider__text-2,
+  .slider__text-5 {
+    margin-top: 92px;
+  }
+}
+
+@media (max-width: 375px) {
+  .transformation__slider-item {
+    min-width: 100%;
+    padding-top: 60px;
+    padding-left: 75px;
+    padding-right: 10px;
+  }
+  .transformation__title {
+    text-align: left;
+  }
+  .transformation__title-text {
+    text-align: left;
+  }
+  .transformation__slider-btn-wrapper {
+    position: relative;
+    width: 178px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 370px) {
+  .transformation .swiper-wrapper {
+    height: auto;
+  }
+  .transformation .swiper {
+    height: auto;
+  }
+}
